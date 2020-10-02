@@ -1,13 +1,13 @@
 # write file
 
-print "type the filename"
+print ("type the filename")
 
-filename= raw_input("filename please")
+filename= input("filename please")
 f = open(filename,'r+')
 
-f.readline()
-f.readline()
-f.readline()
+print(f.readline())
+print(f.readline())
+print(f.readline())
 line1= raw_input("line 1...")
 line2=raw_input("line2 ...")
 line3=raw_input("line3....")
