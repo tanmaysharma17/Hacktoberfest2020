@@ -3,9 +3,11 @@
 print "type the filename"
 
 filename= raw_input("filename please")
-#enter code here
+f = open(filename,'r+')
 
-print "three lines"
+f.readline()
+f.readline()
+f.readline()
 line1= raw_input("line 1...")
 line2=raw_input("line2 ...")
 line3=raw_input("line3....")
@@ -13,15 +15,15 @@ line3=raw_input("line3....")
 
 # write on file
 
-target.write(line1)
-target.write("\n")
+f.write(line1)
+f.write("\n")
                 
-target.write(line2)
-target.write("\n")
+f.write(line2)
+f.write("\n")
                 
-target.write(line3)
-target.write("\n")
+f.write(line3)
+f.write("\n")
 
 # close the file
 
-target.close()
+f.close()
