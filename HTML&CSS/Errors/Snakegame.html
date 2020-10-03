@@ -74,7 +74,7 @@ function loop() {
     snake.y = canvas.height - grid;
   }
   else if (snake.y >= canvas.height) {
-    snake.y = 0
+    snake.y = 0;
   }
 
   snake.cells.unshift({x: snake.x, y: snake.y});
@@ -92,9 +92,9 @@ function loop() {
     
     context.fillRect(cell.x, cell.y, grid-1, grid-1);
 
-    if (cell.x === apple.x && cell.y === apple.y) 
+    if (cell.x === apple.x && cell.y === apple.y) {
       snake.maxCells++;
-      {
+      
  
       apple.x = getRandomInt(0, 25) * grid;
       apple.y = getRandomInt(0, 25) * grid;
