@@ -4,7 +4,7 @@
 <p align='center'><img src='https://hacktoberfest.digitalocean.com/assets/HF-full-logo-b05d5eb32b3f3ecc9b2240526104cf4da3187b8b61963dd9042fdc2536e4a76c.svg' width='55%'>
 
 <p align='center'><h1 align='center'>Hola Amigos,<h4 style='font-style:italic'>
-Get ready for some crazy days of bugs,typos,erros and fun.... </h4> </h1></p>
+Get ready for some crazy days of bugs, typos, errors and fun.... </h4> </h1></p>
  <br>
 
 ### This repository contains code bases and issues that you can solve for the ongoing Hacktoberfest-2020.
@@ -12,8 +12,8 @@ Get ready for some crazy days of bugs,typos,erros and fun.... </h4> </h1></p>
 #### Your Get Started Guide :-
 
 <ul>
-<li>Each folder is Language specefic. </li>
-<li>Choose your suited language and see the erros folder inside it to debug 👩‍💻 or you can choose from various tasks provided in the tasks folder 🎯.</li>
+<li>Each folder is Language specific. </li>
+<li>Choose your suited language and see the errors folder inside it to debug 👩‍💻 or you can choose from various tasks provided in the tasks folder 🎯.</li>
 <li>Go to the issues page and find the one suits you.Make sure issues which you choose have the label
 <strong>Hactoberfest2020</strong> in them.</li>
 <li>Each Language folder contains the readme which will guide you how to do the tasks in it.</li>
