@@ -6,9 +6,10 @@
 
 # Read input as specified in the question.
 # Print output as specified in the question.
+# implement the conv(s) function recursively
+
 def conv(s):
-    # implement the conv(s) function recursively
+        return int(s)
 
-
-s = input()
+s = input(str("What the number?"))
 print(conv(s))
