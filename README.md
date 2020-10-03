@@ -12,8 +12,8 @@ Get ready for some crazy days of bugs,typos,erros and fun.... </h4> </h1></p>
 #### Your Get Started Guide :-
 
 <ul>
-<li>Each folder is Language specefic. </li>
-<li>Choose your suited language and see the erros folder inside it to debug 👩‍💻 or you can choose from various tasks provided in the tasks folder 🎯.</li>
+<li>Each folder is Language specific. </li>
+<li>Choose your suited language and see the errors folder inside it to debug 👩‍💻 or you can choose from various tasks provided in the tasks folder 🎯.</li>
 <li>Go to the issues page and find the one suits you.Make sure issues which you choose have the label
 <strong>Hactoberfest2020</strong> in them.</li>
 <li>Each Language folder contains the readme which will guide you how to do the tasks in it.</li>
