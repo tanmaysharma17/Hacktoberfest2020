@@ -7,10 +7,13 @@
 # Print output as specified in the question.
 
 def dsum(n):
-    small = dsum(n//10)
+    if n == 0:
+        return 0
+    small = dsum(int(n/10))
     ans = n % 10+small
     return ans
 
 
 n = int(input())
-print(dsum(n))
+sum =dsum(n)
+print(sum)
