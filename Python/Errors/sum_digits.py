@@ -14,5 +14,6 @@ def dsum(n):
     return ans
 
 n = int(input())
+
 print(dsum(n))
 
