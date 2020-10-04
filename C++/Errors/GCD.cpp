@@ -10,6 +10,11 @@ int m,n;
  cin>>m>>n;
   //error in the below segment
 //-------------
+int ans;
+if(m==0) ans = n;
+else if(n==0) ans = m;
+else
+{
 while(m!=n)
  {
  if(m>=n)
@@ -17,7 +22,10 @@ while(m!=n)
  else
  n=n-m;
  }
- cout<<"GCD is "<<m;
+ans = m;
+}
+ cout<<"GCD is "<<ans;
  //-------------
 return 0;
 }
+
