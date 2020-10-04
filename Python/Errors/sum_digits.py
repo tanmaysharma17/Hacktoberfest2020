@@ -13,7 +13,7 @@ def dsum(n):
     ans = n % 10+small
     return ans
 
-
 n = int(input())
-sum =dsum(n)
-print(sum)
+
+print(dsum(n))
+

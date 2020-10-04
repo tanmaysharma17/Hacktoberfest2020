@@ -14,10 +14,19 @@ even 1+2+3=6 which is also divisible by 6
 
 """
 def perfect_number(n):
+           a=n
+           sum=0
+           for i in range(1,n+1):
+                      if a%i==0:
+                         sum=sum+i
+           if sum/2==a:
+              return (str(a)+"is perfect")
+           else:
+              return (str(a)+"is not perfect")
            
            
-print perfect_number(6)
-print perfect_number(18)
+print (perfect_number(6))
+print (perfect_number(18))
 
 string="string_like_this"
 print string.title()

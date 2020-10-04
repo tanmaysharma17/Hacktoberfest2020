@@ -15,37 +15,37 @@ Examples:
 
 def is_valid(code):
     openers_to_closers = {
-        '(' : ')',
-        '{' : '}',
-        '[' : ']'
+        ')' : '(',
+        '}' : '{',
+        ']' : '['
     }
 
-    openers = frozenset(openers_to_closers.keys())
-    print "the operners are : ",openers
-    closers = frozenset(openers_to_closers.values())
-    print "the closers are :", close
+    openers = frozenset(openers_to_closers.values())
+    print("the operners are : ",openers)
+    closers = frozenset(openers_to_closers.keys())
+    print("the closers are :", closers)
 
     openers_stack = []
-    print "opener_new_stack----------",openers_stack
+    print("opener_new_stack----------",openers_stack)
 
-    for char in code
+    for char in code:
         if char in openers:
-            print "the characters are :",char
+            print("the characters are :",char)
             openers_stack.append(char)
         elif char in closers:
-            print "char in closers "
-            print openers_stack
-            if (not openers_stack)
+            print("char in closers")
+            print(openers_stack)
+            if not openers_stack:
                 return False
             else:
-                last_unclosed_opener = openers_stack.pop
-
                 # if this closer doesn't correspond to the most recently
                 # seen unclosed opener, short-circuit, returning false
-                if not openers_to_closers(last_unclosed_opener) == char
+                if openers_stack[-1]==openers_to_closers[char]:
+                    openers_stack.pop()
+                else:
                     return False
 
     return openers_stack == []
     
-print is_valid("hdfhsj([{}])fdffjfghb")
-print is_valid("hdfhsj([{]fdffjfghb")
+print(is_valid("([{}])"))
+print(is_valid("([{]"))
