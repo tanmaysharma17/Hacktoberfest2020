@@ -7,10 +7,18 @@ LETTERS 10
 DIGITS 3
 """
 
-s = raw_input("enter the sentence")
-d={"DIGITS":0, "LETTERS":0}
-for c in s:
-   
-        pass
-print "LETTERS", d["LETTERS"]
-print "DIGITS", d["DIGITS"]
+sentence = input("Enter a sentence containing letters and digits -> ")
+digit = letter = other = 0 
+for character in sentence:
+        if character.isdigit():
+                digit=digit+1
+        elif character.isalpha():
+                letter=letter+1
+        else:
+                other=other+1
+                pass
+                
+print(f"Number of letters: {letter}")
+print(f"Number of digits: {digit}")
+print(f"Number of non letter or digit characters: {other}")
+print(f'\n The original sentence entered: {sentence}')
