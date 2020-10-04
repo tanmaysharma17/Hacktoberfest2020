@@ -4,13 +4,8 @@ write a program to print this list after removing all duplicate
 values with original order reserved.
 """
 
-def removeDuplicate( lists):
-    newlist=[]
-    seen = set()
-    for item in lists:
-        
+def remove_duplicates(list_of_numbers: list):
+    return list(dict.fromkeys(list_of_numbers))    
 
-    return newlist
-
-li=[12,24,35,24,88,120,155,88,120,155]
-print removeDuplicate(li)
+list_of_numbers =[12,24,35,24,88,120,155,88,120,155]
+print(remove_duplicates(list_of_numbers))
