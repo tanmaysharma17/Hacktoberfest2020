@@ -23,8 +23,8 @@ int Delete(struct Array *arr,int index)
  {
  x=arr->A[index];
  for(i=index;i<arr->length-1;i++)
- arr->A[i]=arr->A[i];
- arr->length++;
+ arr->A[i]=arr->A[i+1];
+ arr->length--;
  return x;
  }
  return 0;
