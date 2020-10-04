@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title></title>
+  <title>Snake Game</title>
   <style>
   html, body {
+
     height: 100%;
     margin: 0;
+
   }
 
   body {
@@ -20,7 +22,9 @@
   </style>
 </head>
 <body>
+
 <canvas width="400" height="400" id="game"><canvas>
+
 <script>
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
@@ -100,7 +104,7 @@ function loop() {
       apple.y = getRandomInt(0, 25) * grid;
     }
 
-    for (var i = index + 1; i < snake.cells.length; i++) {
+    for(var i = index + 1; i < snake.cells.length; i++) {
       
       if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
         snake.x = 160;
