@@ -27,7 +27,7 @@ class LinkedList {
             current = next; 
         } 
         //find the error
-        node = current; 
+        node = prev; 
         return node; 
     } 
   
