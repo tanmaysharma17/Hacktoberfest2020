@@ -1,12 +1,8 @@
-def fatorial(num):
-    f = 1
-    for c in range(num, 0, -1):
-        f *= c
-        if c > 1:
-            print(c,end=" x ")
-        if c == 1:
-            print(c, end=" = ")
-    print(f)
 
-
-fatorial(-6)
+def factorial(n):
+    if n==1:
+        return 1
+    return n*factorial(n-1)
+  
+  
+print(factorial(6))
