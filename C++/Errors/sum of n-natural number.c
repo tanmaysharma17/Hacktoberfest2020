@@ -1,19 +1,17 @@
 //Sum of N natural numbers
 #include<stdio.h>
-//error in the below segment
-//-------------
-int sum(int n)
-{
- if(n=0){
+int sum(int n){
+ if(n==0){
    return 0;
  }
- return (n-1)*n/2;
+ return (n*(n+1))/2;
 }
-//-------------
 
 int main()
 {
- int r=sum(6);
- printf("%d ",r);
+ int r;
+ scanf("%d",&r);
+ int result=sum(r);
+ printf("%d ",result);
  return 0;
 }
