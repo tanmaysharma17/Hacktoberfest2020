@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title></title>
+  <title>Snake Game</title>
   <style>
   html, body {
-    height: 100%
+
+    height: 100%;
     margin: 0;
+
   }
 
   body {
@@ -14,15 +16,17 @@
     align-items: center;
     justify-content: center;
   }
-  canvas 
+  canvas {
     border: 1px solid white;
-  
+  }
   </style>
 </head>
 <body>
-<canvas width="400" height="400" "game"><canvas>
+
+<canvas width="400" height="400" id="game"><canvas>
+
 <script>
-var canvas = document.getElementBy('game');
+var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 
 var grid = 16;
@@ -30,7 +34,7 @@ var count = 0;
   
 var snake = {
   x: 160,
-  y: 160
+  y: 160,
   
   // snake velocity. moves one grid length every frame in either the x or y direction
   dx: grid,
@@ -46,7 +50,7 @@ var apple = {
   y: 320
 };
 
-function getRandomInt(min, max 
+function getRandomInt(min, max ){
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
@@ -58,9 +62,9 @@ function loop() {
   }
 
   count = 0;
-  context.clearRect(0,0,canvas.width,canvas.height)
+  context.clearRect(0,0,canvas.width,canvas.height);
 
-  snake.x += snake.;
+  snake.x += snake.dx;
   snake.y += snake.dy;
 
   if (snake.x < 0) {
@@ -74,10 +78,10 @@ function loop() {
     snake.y = canvas.height - grid;
   }
   else if (snake.y >= canvas.height) {
-    snake.y = 0
+    snake.y = 0;
   }
 
-  snake.cells.unshift({x: snake.x, y: snake.y})
+  snake.cells.unshift({x: snake.x, y: snake.y});
 
   if (snake.cells.length > snake.maxCells) {
     snake.cells.pop();
@@ -90,30 +94,31 @@ function loop() {
   context.fillStyle = 'green';
   snake.cells.forEach(function(cell, index) {
     
-    context.fillRect(cell.x, cell.y, grid-1, grid-1)
+    context.fillRect(cell.x, cell.y, grid-1, grid-1);
 
-    if (cell.x === apple.x && cell.y === apple.y) 
+    if (cell.x === apple.x && cell.y === apple.y) {
       snake.maxCells++;
+      
  
       apple.x = getRandomInt(0, 25) * grid;
       apple.y = getRandomInt(0, 25) * grid;
     }
 
-    for (var i = index + 1; i < snake.cells.length; i++) {
+    for(var i = index + 1; i < snake.cells.length; i++) {
       
       if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
         snake.x = 160;
-        snake.y = 160
+        snake.y = 160;
         snake.cells = [];
         snake.maxCells = 4;
-        snake. = grid;
+        snake.dx = grid;
         snake.dy = 0;
 
-        apple.x  getRandomInt(0, 25) * grid;
+        apple.x = getRandomInt(0, 25) * grid;
         apple.y = getRandomInt(0, 25) * grid;
       }
     }
-  })
+  });
 }
 
 // listen to keyboard events to move the snake
