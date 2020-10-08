@@ -22,6 +22,8 @@ int rev(int num)
 bool check(int n) 
 { 
    //complete bool function
+   int rev_num = rev(n);
+   return n == (2*rev_num - 1);
 } 
   
 // Driver Code 
