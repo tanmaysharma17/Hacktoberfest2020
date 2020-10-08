@@ -12,7 +12,7 @@ def count(n):
     digit = n % 10
     smallans = count(n/10)
     if digit == 0:
-        return smallans
+        return smallans+1
     else:
         return smallans
 
