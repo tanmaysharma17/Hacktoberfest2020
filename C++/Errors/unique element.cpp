@@ -14,7 +14,7 @@ int findUnique(int *arr, int size)
                 continue;
             }
             if(arr[i]==arr[j]){
-                
+                f = true; 
                 break;
             }
 
@@ -25,6 +25,7 @@ int findUnique(int *arr, int size)
         }
 
         }
+    return -1;
     }
 
 
