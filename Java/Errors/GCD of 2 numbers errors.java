@@ -6,7 +6,6 @@ public class GCD {
 
         while(n1 != n2)
         {
-            
             if(n1 > n2)
                 n1 -= n2;
             else

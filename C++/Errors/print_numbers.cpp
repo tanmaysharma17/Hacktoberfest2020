@@ -8,8 +8,14 @@ void print(int n){
     if(n == 1){
         cout << n << " ";
     }
-    cout << n << " ";
+
+    else
+    {
+    
     print(n - 1);
+    cout << n << " ";
+    }
+
 }
 
 //No need to change the main function.
