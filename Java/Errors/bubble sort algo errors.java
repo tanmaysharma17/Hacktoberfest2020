@@ -60,7 +60,7 @@ class Main {
 
     // call the method bubbleSort using object bs
     // pass the array as the method argument
-    bs.bubbleSort(sort);
+    bs.bubbleSort(data);
     System.out.println("Sorted Array in Ascending Order:");
 
     // call toString() of Arrays class
