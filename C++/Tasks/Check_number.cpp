@@ -5,14 +5,16 @@ using namespace std;
 //Return true or false.  Do this recursively.
 
 bool checkNumber(int input[], int size, int x) {
-  /* Don't write main().
-     Don't read input, it is passed as function argument.
-     Return output and don't print it.
-     Taking input and printing output is handled automatically.
-  */
-
-
-
+  int i = 0;
+  if (size == 0) {
+    return false;
+  }
+  if (input[size - 1] == x) {
+    return true;
+  } else {
+    i++;
+    checkNumber(input, size - 1, x);
+  };
 }
 
 int main(){
