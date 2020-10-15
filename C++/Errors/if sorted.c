@@ -14,19 +14,20 @@ struct Array
  for(i=0;i<arr.length;i++)
  printf("%d ",arr.A[i]);
  }
-  //error in the below segment
+  //error in the below segment  fixed by mRuggi
 //-------------
 int isSorted(struct Array arr)
 {
  int i;
- for(i=0;i<arr->length-1;i++)
+ for(i=0;i<arr.length-1;i++)
  {
- if(arr->A[i]>arr->A[i+1])
+ if(arr.A[i]>arr.A[i+1])
  return 0;
  }
  return 1;
 }
 //-------------
+
 int main()
 {
  struct Array arr1={{2,3,9,16,18,21,28,32,35},10,9};
