@@ -4,13 +4,16 @@ using namespace std;
 //You have been given an integer array/list(ARR) and a number X. 
 //Find and return the total number of pairs in the array/list which sum to X.
 
-int pairSum(int *input, int size, int x){
-	//Write your code here
-  
-  
-  
- 
- 
+int pairSum(int * input, int size, int x) {
+  int answer = 0;
+  for (int i = 0; i < size; i++) {
+    for (int j = 0; j < size; j++) {
+      if (input[i] + input[j] == x) {
+        answer++;
+      }
+    }
+  }
+  return answer / 2;
 }
 
 //all changes to be made in the above function only
