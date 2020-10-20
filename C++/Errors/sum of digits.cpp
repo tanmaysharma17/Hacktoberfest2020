@@ -1,20 +1,14 @@
-
 #include <iostream>
 using namespace std;
-int main()
-{
-int n,r,sum=0;
- cout<<"Enter a no. ";
+int main() {
+ int n,sum=0;
+ cout<<"Enter a number ";
  cin>>n;
- //error in the below segment
-//-------------
-while(n!=0)
- {
- r=n%10;
- n=n/10;
- sum=sum+r;
+ while(n) {
+   digit = n%10;
+   n/=10;
+   sum=sum+digit;
  }
- //-------------
- cout<<sum;
- cout<<endl;
+ 
+ cout<<sum << endl;
 }
