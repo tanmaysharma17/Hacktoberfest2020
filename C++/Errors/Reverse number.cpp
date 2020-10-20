@@ -8,14 +8,12 @@ int main()
  cout << "Enter a positive number: ";
  cin >> num;
  n=num;
-
-//error in the below segment
-//-------------
- while(num!=0)
+ 
+ while(num)
  {
  digit = num % 10;
  rev = (rev * 10) + digit;
- num = num / 10;
+ num/=10;
  } 
 
  cout << " The reverse of the number is: " << rev << endl;
@@ -24,6 +22,5 @@ int main()
  cout << " The number is not a palindrome";
  else
  cout << " The number is a palindrome";
-//-------------
  return 0;
 }
