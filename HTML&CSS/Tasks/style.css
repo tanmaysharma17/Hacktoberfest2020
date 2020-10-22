@@ -1,0 +1,77 @@
+body,html{
+   height:100%;
+   margin:0;   
+   width: 100%;
+}
+.bg
+{
+    background-image: url('lpimg.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.textbox
+{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    color:white;
+    background-color: rgba(172, 16, 164,0.5);
+    
+}
+h1
+{
+    font-size: 100px;
+    font-family: sans-serif;
+}
+.glow
+{
+    text-shadow: 0 0 20px #5dfde2;
+    transform: translateX(25%) translateY(-50px);
+}
+.content
+{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: rgba(240, 139, 235, 0.8);
+    padding: 50px;
+    text-shadow:0 0 10px slategray;
+    text-align: center;
+    transform: translateY(-65px);
+}
+button
+{
+    height: 60px;
+    width: 150px;
+    transform: translateY(-50px) translateX(600px);
+    background-color: rgb(209, 18, 247);
+    font-size: 20px;
+    color: snow;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 25px;
+    border-color: violet;
+}
+a:link
+{
+    color: white;
+    text-decoration: none;
+}
+a:visited
+{
+    color:white;
+    text-decoration: none;
+}
+a:hover
+{
+    color:gainsboro;
+    text-decoration: none;
+}
+a:active
+{
+    color:gainsboro;
+    text-decoration: none;
+}
