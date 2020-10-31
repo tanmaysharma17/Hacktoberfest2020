@@ -22,7 +22,7 @@ int main()
   }
 
 
-cout<<"\nInitially the array is:\n";
+cout<<"Initially the array is:\n";
 
 i=1;
 
@@ -33,7 +33,7 @@ while(i<=n)
 }
 
 //now
-cout<<"\nEnter number to be inserted:\n";
+cout<<"Enter number to be inserted:\n";
 cin>>item;
 
   cout<<"enter the position where item is to be inserted:";
@@ -50,7 +50,7 @@ while(k<=i)
 ar[k]=item;
 n=n+1;
 
-cout<<"\nArray after insertion:\n";
+cout<<"Array after insertion:\n";
 i=1;
 
 while(i<=n)
